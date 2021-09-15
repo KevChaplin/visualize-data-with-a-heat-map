@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang=en>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Visualize Data With A Heat Map</title>
+    <meta name="description" content="Project 3 of the freeCodeCamp's Data Visualization course">
+    <meta name="author" content="Kevin Chaplin">
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+  </head>
+
+  <body>
+    <div class="container">
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script type="module">
+      import {interpolateYlGn} from "https://cdn.skypack.dev/d3-scale-chromatic@3";
+      const yellow = interpolateYlGn(0); // "rgb(255, 255, 229)"
+      const yellowGreen = interpolateYlGn(0.5); // "rgb(120, 197, 120)"
+      const green = interpolateYlGn(1); // "rgb(0, 69, 41)"
+    </script>
+  </body>
+
+</html>
